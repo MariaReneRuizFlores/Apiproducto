@@ -29,10 +29,10 @@ namespace Apiproducto
             manager.PasswordValidator = new PasswordValidator
             {
                 RequiredLength = 6,
-                RequireNonLetterOrDigit = true,
-                RequireDigit = true,
-                RequireLowercase = true,
-                RequireUppercase = true,
+                RequireNonLetterOrDigit = false, //decia true, lo cambiamos por false uwu
+                RequireDigit = false,            //decia true, lo cambiamos por false uwu
+                RequireLowercase = false,        //decia true, lo cambiamos por false uwu
+                RequireUppercase = false,        //decia true, lo cambiamos por false uwu
             };
             var dataProtectionProvider = options.DataProtectionProvider;
             if (dataProtectionProvider != null)
